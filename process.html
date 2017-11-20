@@ -1,0 +1,660 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дизайн графика</title>
+    <link rel="stylesheet" href="style.css?201711071300" />
+</head>
+
+<body>
+    <h1>Шаг 1</h1>
+    <img src="grafik.png" alt="Начальный график" />
+    <h2>Шаг 2</h2>
+    <p>Смотрим на этот пиздец. Понимаем, что надо сначала вырвать данные из этого ада.</p>
+    <div class="step2">
+        <table>
+            <caption>Доли рынка ведущих производителей мороженого</caption>
+            <thead>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Доля в %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Инмарко</td>
+                    <td>10.60</td>
+                </tr>
+                <tr>
+                    <td>Талосто</td>
+                    <td>8.50</td>
+                </tr>
+                <tr>
+                    <td>Айсберри</td>
+                    <td>5.40</td>
+                </tr>
+                <tr>
+                    <td>Русский холод</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>Нестле</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>Снежный город</td>
+                    <td>3.40</td>
+                </tr>
+                <tr>
+                    <td>АльтерВест</td>
+                    <td>3.30</td>
+                </tr>
+                <tr>
+                    <td>Челны-Холод</td>
+                    <td>2.90</td>
+                </tr>
+                <tr>
+                    <td>Белгородский хладокомбинат</td>
+                    <td>2.70</td>
+                </tr>
+                <tr>
+                    <td>Айсберг (Тула)</td>
+                    <td>2.60</td>
+                </tr>
+                <tr>
+                    <td>Липецкий хладокомбинат</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>Холод (Пятигорск)</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>Петрохолод</td>
+                    <td>2.40</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №1 (Санкт-Петербург)</td>
+                    <td>2.40</td>
+                </tr>
+                <tr>
+                    <td>Пензахолод</td>
+                    <td>2.10</td>
+                </tr>
+                <tr>
+                    <td>Волгомясомолторг</td>
+                    <td>1.70</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №3 (Екатеринбург)</td>
+                    <td>1.50</td>
+                </tr>
+                <tr>
+                    <td>Краснодарский хладокомбинат</td>
+                    <td>1.50</td>
+                </tr>
+                <tr>
+                    <td>Иней (Ставрополь)</td>
+                    <td>1.50</td>
+                </tr>
+                <tr>
+                    <td>Подольское мороженое</td>
+                    <td>1.30</td>
+                </tr>
+                <tr>
+                    <td>другие</td>
+                    <td>31.30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 3</h2>
+    <p>Убираем перспективу, подчищаем цвета, собираем круговую диаграмму.</p>
+    <img src="grafik2.png" alt="Подчищенный график" />
+    <p>
+        <small>
+            <a href="https://codepen.io/Seigiard/full/RjQZqK/" target="_blank">Пример на КодПене</a>
+        </small>
+    </p>
+    <h2>Шаг 4</h2>
+    <p>График всё равно очень непонятный и шумный. Невозможно сравнивать доли, сложно читать надписи.</p>
+    <p>Попробуем сделать столбчатую диаграмму.</p>
+    <img src="grafik3.png" alt="Диаграмма" />
+    <p>
+        <small>
+            <a href="https://codepen.io/Seigiard/full/QOQqNz/" target="_blank">Пример на КодПене</a>
+        </small>
+    </p>
+    <h2>Шаг 5</h2>
+    <p>Очень хочется убрать «Другие», но тогда сравнивание столбцов потеряет смысл. Столбец на всю ширину будет у «Инмарко»,
+        а это искажение данных.</p>
+    <p>А если убрать столбцы — мы получим простую таблицу.</p>
+    <p>Вернёмся к таблице.</p>
+    <div class="step5">
+        <table>
+            <caption>Доли рынка ведущих производителей мороженого</caption>
+            <thead>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Доля в %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Инмарко</td>
+                    <td class='aligned-cell'>
+                        <span class="left">10</span>.6</td>
+                </tr>
+                <tr>
+                    <td>Талосто</td>
+                    <td class='aligned-cell'>
+                        <span class="left">8</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Айсберри</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Русский холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Нестле</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Снежный город</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.4</td>
+                </tr>
+                <tr>
+                    <td>АльтерВест</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.3</td>
+                </tr>
+                <tr>
+                    <td>Челны-Холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.9</td>
+                </tr>
+                <tr>
+                    <td>Белгородский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.7</td>
+                </tr>
+                <tr>
+                    <td>Айсберг (Тула)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.6</td>
+                </tr>
+                <tr>
+                    <td>Липецкий хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Холод (Пятигорск)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.50</td>
+                </tr>
+                <tr>
+                    <td>Петрохолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №1 (Санкт-Петербург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr>
+                    <td>Пензахолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.1</td>
+                </tr>
+                <tr>
+                    <td>Волгомясомолторг</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.7</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №3 (Екатеринбург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Краснодарский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Иней (Ставрополь)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Подольское мороженое</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.3</td>
+                </tr>
+                <tr>
+                    <td>Другие</td>
+                    <td class='aligned-cell'>
+                        <span class="left">31</span>.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 6</h2>
+    <p>Название таблицы неоднозначное. Если у нас ведущие производители, тогда зачем графа «другие»? Если выводим всех, то тогда
+        зачем «ведущие» в заголовке?</p>
+    <p>Убираем «ведущие», поясняем, прочему «другие» сгруппированы.</p>
+    <div class="step6">
+        <table>
+            <caption>Производители мороженого</caption>
+            <thead>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Доля в %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Инмарко</td>
+                    <td class='aligned-cell'>
+                        <span class="left">10</span>.6</td>
+                </tr>
+                <tr>
+                    <td>Талосто</td>
+                    <td class='aligned-cell'>
+                        <span class="left">8</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Айсберри</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Русский холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Нестле</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Снежный город</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.4</td>
+                </tr>
+                <tr>
+                    <td>АльтерВест</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.3</td>
+                </tr>
+                <tr>
+                    <td>Челны-Холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.9</td>
+                </tr>
+                <tr>
+                    <td>Белгородский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.7</td>
+                </tr>
+                <tr>
+                    <td>Айсберг (Тула)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.6</td>
+                </tr>
+                <tr>
+                    <td>Липецкий хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Холод (Пятигорск)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Петрохолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №1 (Санкт-Петербург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr>
+                    <td>Пензахолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.1</td>
+                </tr>
+                <tr>
+                    <td>Волгомясомолторг</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.7</td>
+                </tr>
+                <tr>
+                    <td>Хладокомбинат №3 (Екатеринбург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Краснодарский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Иней (Ставрополь)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr>
+                    <td>Подольское мороженое</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.3</td>
+                </tr>
+                <tr>
+                    <td>Другие
+                        <br>
+                        <small>
+                            <em>с долей менее 1%</em>
+                        </small>
+                    </td>
+                    <td class='aligned-cell'>
+                        <span class="left">31</span>.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 7</h2>
+    <p>Попробуем увеличить высоту каждой ячейки пропорционально доле рынка и выделить долю рынка.</p>
+    <div class="step7">
+        <table>
+            <caption>Производители мороженого</caption>
+            <thead>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Доля в %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-part='10.6'>
+                    <td>Инмарко</td>
+                    <td class='aligned-cell'>
+                        <span class="left">10</span>.6</td>
+                </tr>
+                <tr data-part='8.5'>
+                    <td>Талосто</td>
+                    <td class='aligned-cell'>
+                        <span class="left">8</span>.5</td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Айсберри</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Русский холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Нестле</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='3.4'>
+                    <td>Снежный город</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.4</td>
+                </tr>
+                <tr data-part='3.3'>
+                    <td>АльтерВест</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.3</td>
+                </tr>
+                <tr data-part='2.9'>
+                    <td>Челны-Холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.9</td>
+                </tr>
+                <tr data-part='2.7'>
+                    <td>Белгородский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.7</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Айсберг (Тула)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.6</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Липецкий хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Холод (Пятигорск)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr data-part='2.4'>
+                    <td>Петрохолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr data-part='2.4'>
+                    <td>Хладокомбинат №1 (Санкт-Петербург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr data-part='2.1'>
+                    <td>Пензахолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.1</td>
+                </tr>
+                <tr data-part='1.7'>
+                    <td>Волгомясомолторг</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.7</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Хладокомбинат №3 (Екатеринбург)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Краснодарский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Иней (Ставрополь)</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.3'>
+                    <td>Подольское мороженое</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.3</td>
+                </tr>
+                <tr data-part='12'>
+                    <td>Другие
+                        <br>
+                        <small>
+                            <em>с долей менее 1%</em>
+                        </small>
+                    </td>
+                    <td class='aligned-cell'>
+                        <span class="left">31</span>.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 8</h2>
+    <p>Подход интересный, но занимает слишком много места.</p>
+    <p>Дадим информацию о всех производителях мороженого. Также уберём скобки.</p>
+    <div class="step8">
+        <table>
+            <colgroup>
+                <col />
+                <col width="60px" />
+            </colgroup>
+            <caption>Производители мороженого</caption>
+            <thead>
+                <tr>
+                    <th>Производитель</th>
+                    <th>Доля в %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-part='10.6'>
+                    <td>Инмарко</td>
+                    <td class='aligned-cell'>
+                        <span class="left">10</span>.6</td>
+                </tr>
+                <tr data-part='8.5'>
+                    <td>Талосто</td>
+                    <td class='aligned-cell'>
+                        <span class="left">8</span>.5</td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Айсберри</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Русский холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='5'>
+                    <td>Нестле</td>
+                    <td class='aligned-cell'>
+                        <span class="left">5</span>
+                    </td>
+                </tr>
+                <tr data-part='3.4'>
+                    <td>Снежный город</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.4</td>
+                </tr>
+                <tr data-part='3.3'>
+                    <td>АльтерВест</td>
+                    <td class='aligned-cell'>
+                        <span class="left">3</span>.3</td>
+                </tr>
+                <tr data-part='2.9'>
+                    <td>Челны-Холод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.9</td>
+                </tr>
+                <tr data-part='2.7'>
+                    <td>Белгородский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.7</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Айсберг, г.&nbsp;Тула</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.6</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Липецкий хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr data-part='2.5'>
+                    <td>Холод, г.&nbsp;Пятигорск</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.5</td>
+                </tr>
+                <tr data-part='2.4'>
+                    <td>Петрохолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr data-part='2.4'>
+                    <td>Хладокомбинат №1, г.&nbsp;Санкт-Петербург</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.4</td>
+                </tr>
+                <tr data-part='2.1'>
+                    <td>Пензахолод</td>
+                    <td class='aligned-cell'>
+                        <span class="left">2</span>.1</td>
+                </tr>
+                <tr data-part='1.7'>
+                    <td>Волгомясомолторг</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.7</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Хладокомбинат №3, г.&nbsp;Екатеринбург</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Краснодарский хладокомбинат</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.5'>
+                    <td>Иней, г.&nbsp;Ставрополь</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.5</td>
+                </tr>
+                <tr data-part='1.3'>
+                    <td>Подольское мороженое</td>
+                    <td class='aligned-cell'>
+                        <span class="left">1</span>.3</td>
+                </tr>
+                <tr data-part='12'>
+                    <td>Другие
+                        <br>
+                        <small>с долей менее 1%</small>
+                    </td>
+                    <td class='aligned-cell'>
+                        <span class="left">31</span>.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Шаг 9</h2>
+    <p>Дадим информацию о ведущих производителях.</p>
+    <div class="step9">
+        <p>В 2017 году пять ведущих производителей мороженого заняли 34,1%&nbsp;рынка&nbsp;сбыта.</p>
+        <p>«Инмарко» принадлежит 10,6%, «Талосто»&nbsp;—&nbsp;8.5%, а&nbsp;«Айсберри», «Русский холод» и&nbsp;«Нестле»&nbsp;—&nbsp;по&nbsp;5%&nbsp;рынка.</p>
+    </div>
+    <p>Итого у нас получилось два формата данных: по ведущим производителям и по всей отрасли. Публикуем результат.</p>
+    <script>
+        const trs = document.querySelectorAll('.step7 table tbody tr');
+        const tdHeightCoefficient = 1.5;
+        Array.prototype.slice.call(trs).map(x => {
+            x.style.height = (tdHeightCoefficient * Number(x.dataset.part)) + 'em';
+        });
+    </script>
+</body>
+
+</html>
